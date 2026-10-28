@@ -3,9 +3,19 @@
 Multi-tenant real-estate CRM: lead capture, distribution, pipeline and
 reporting. React (Vite) front end, Node/Express API, MySQL.
 
-This tree is a conversion of the PHP edition. **It is a work in progress** —
-[`docs/PORT-STATUS.md`](docs/PORT-STATUS.md) lists exactly what is implemented
-and verified and what is not here yet. Read it before planning work.
+## Two codebases live here
+
+| Folder | What it is |
+| --- | --- |
+| repository root (`client/`, `server/`, `database/`) | The **React + Node conversion**. In progress — see [`docs/PORT-STATUS.md`](docs/PORT-STATUS.md) for exactly what is implemented and verified and what is not. |
+| [`php-edition/`](php-edition/) | The **complete, working PHP/MySQL CRM** that runs the product today. This is the reference implementation the conversion is being ported from, not legacy code. |
+
+Read `docs/PORT-STATUS.md` before planning work on the conversion, and
+[`php-edition/WHAT-WAS-REMOVED.md`](php-edition/WHAT-WAS-REMOVED.md) before
+running the PHP edition — credentials and real customer data were stripped
+from it before publishing.
+
+The rest of this README describes the React + Node tree.
 
 ---
 

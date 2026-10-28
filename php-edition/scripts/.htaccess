@@ -1,0 +1,11 @@
+# Application includes and data — never served over HTTP.
+# The root .htaccess blocks these too; this is the belt to that braces, for
+# hosts where AllowOverride limits what the root file may do.
+
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+  Order allow,deny
+  Deny from all
+</IfModule>
